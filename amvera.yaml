@@ -1,5 +1,12 @@
 meta:
   environment: node
   toolchain:
-    name: browser
+    name: npm
     version: 14
+
+build:
+  additionalCommands: npm run build
+
+run:
+  scriptName: server.js
+  containerPort: 3000
