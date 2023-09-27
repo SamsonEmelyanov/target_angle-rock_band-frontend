@@ -2,7 +2,7 @@
   "name": "resto",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3000/",
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@material-ui/core": "latest",
     "@material-ui/icons": "latest",
