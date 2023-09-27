@@ -2,7 +2,6 @@
   "name": "resto",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://target-angle-rock-band-frontend-samntn.amvera.io/",
   "dependencies": {
     "@material-ui/core": "latest",
     "@material-ui/icons": "latest",
