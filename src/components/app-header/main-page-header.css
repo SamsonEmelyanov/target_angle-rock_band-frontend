@@ -1,0 +1,171 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background-color: black; }
+
+@-moz-document url-prefix()  /* Disable scrollbar Firefox */ {
+  html {
+    scrollbar-width: none; } }
+body, .chat-window, .fun-club-offer__slide {
+  margin: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-y: scroll; }
+
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; }
+
+.main-background {
+  background-image: url("background2 1.svg");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.container {
+  margin: 0 auto;
+  min-height: 1076px;
+  position: relative;
+  width: 1599px;
+  height: auto; }
+
+header {
+  display: flex; }
+
+.header__left {
+  display: flex; }
+
+a .auth-text {
+  text-decoration: none; }
+
+.auth {
+  display: flex;
+  margin: 38px 0px 0px 200px;
+  width: 171px;
+  height: 43px;
+  border: 1px solid #FF7000;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: url("Group.svg") no-repeat top 14px left 24.92px; }
+  .auth-text {
+    display: block;
+    margin: 12px 24px 12px 51px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F7F7F7; }
+
+.registration {
+  text-decoration: none;
+  display: block;
+  margin: 50px 0px 0px 29px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F7F7F7; }
+
+.header__right {
+  display: flex; }
+
+.telephone {
+  height: 57px;
+  width: 200px;
+  display: block;
+  text-decoration: none;
+  margin: 50px 0px 0px 633px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F7F7F7; }
+
+.carT {
+  display: block;
+  height: 43px;
+  width: 43px;
+  background: url("Vector (2).svg") no-repeat center;
+  border: 1px solid #FF7000;
+  box-sizing: border-box;
+  margin: 38px 0px 0px 29px; }
+
+.logo {
+  position: absolute;
+  width: 305px;
+  height: 118px;
+  background: url("РАКУРС-ЦЕЛИ-1.svg");
+  top: 119px;
+  right: 648px;
+  bottom: 889px;
+  left: 647px; }
+  .logo__footer {
+    display: block;
+    position: absolute;
+    background: url("РАКУРС-ЦЕЛИ-1 (1).svg");
+    width: 179px;
+    height: 70px;
+    top: 49px;
+    left: 708px; }
+
+nav {
+  display: flex;
+  justify-content: space-between; }
+
+.menu-left {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 77px;
+  margin-left: 199px;
+  width: 405px;
+  height: 43px;
+  border-bottom: 1px solid #FF7000; }
+  .menu-left__footer {
+    border-bottom: none; }
+
+.menu-left li {
+  display: inline-block; }
+  .menu-left li a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF; }
+
+.menu-right {
+  border-bottom: 1px solid #FF7000;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 77px;
+  margin-right: 199px;
+  width: 426px;
+  height: 43px; }
+  .menu-right__footer {
+    border-bottom: none; }
+
+.menu-right li {
+  display: inline-block; }
+  .menu-right li a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF; }
+
+.grange-background {
+  background-image: url("image 32.svg");
+  background-size: 100%; }
+
+/*# sourceMappingURL=main-page-header.css.map */

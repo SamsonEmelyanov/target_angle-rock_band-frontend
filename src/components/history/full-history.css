@@ -1,0 +1,53 @@
+iframe {
+  display: block; }
+
+.wind-of-change {
+  margin-top: 64px; }
+
+.media-content-photo {
+  margin-left: 44px;
+  width: 508px;
+  height: auto; }
+  .media-content-photo__1 {
+    margin-top: 54px; }
+  .media-content-photo__2 {
+    margin-top: 754px; }
+  .media-content-photo__3 {
+    margin-top: 124px; }
+  .media-content-photo__4 {
+    margin-top: 84px; }
+  .media-content-photo__5 {
+    margin-top: 64px; }
+
+.media-content-photo-description {
+  text-align: center;
+  margin-left: 44px;
+  width: 508px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  color: #F7F7F7; }
+
+.oblivion {
+  margin-top: 204px;
+  margin-left: 44px; }
+
+.rapo {
+  margin-top: 74px;
+  margin-left: 44px; }
+
+.oblivion-bar {
+  margin-top: 204px;
+  margin-left: 44px; }
+
+.getto {
+  margin-top: 44px;
+  margin-left: 44px; }
+
+.friday {
+  margin-top: 44px;
+  margin-left: 44px; }
+
+/*# sourceMappingURL=full-history.css.map */

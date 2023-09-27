@@ -1,0 +1,44 @@
+.offer {
+    padding: 70px 0 100px 0;
+    position: relative;
+    &__slider {
+        width: 533px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        &-counter {
+            display: flex;
+            width: 180px;
+            align-items: center;
+            font-size: 24px;
+            color: rgba(0,0,0, .5);
+        }
+        &-wrapper {
+            width: 100%;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+        }
+        &-prev {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        &-next {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        #current {
+            font-size: 48px;
+            font-weight: bold;
+            color: rgba(0,0,0,1);
+        }
+    }
+    &__slide {
+        width: 100%;
+        height: 356px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+}

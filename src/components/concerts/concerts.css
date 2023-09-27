@@ -1,0 +1,83 @@
+.concerts-content {
+  margin-top: 50px;
+  margin-left: 282px;
+  display: block; }
+
+.concert {
+  border-bottom: #757575 2px solid;
+  display: flex;
+  justify-content: space-between;
+  width: 1036px;
+  padding-bottom: 4px;
+  margin-bottom: 50px; }
+
+.concerts-button {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #F7F7F7;
+  border: 1px solid #FF7000;
+  box-sizing: border-box;
+  border-right: 9px solid #FF7000;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  background: url("../app-header/Vector (2).svg") no-repeat top 14px right 25.8px;
+  width: 162px;
+  height: 43px;
+  margin-left: 0; }
+
+.concerts-button-text {
+  margin-left: 29.8px;
+  margin-top: 14.06px; }
+
+.concert-date {
+  margin-top: auto;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.055em;
+  color: #FF7000; }
+
+.concert-city {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.055em;
+  color: #F7F7F7;
+  margin-top: auto;
+  margin-left: 50px; }
+
+.concert-club {
+  text-align: center;
+  margin-top: auto;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.055em;
+  color: #FF7000;
+  margin-left: 50px; }
+
+.concert-time {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.055em;
+  color: #F7F7F7;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 50px; }
+
+/*# sourceMappingURL=concerts.css.map */

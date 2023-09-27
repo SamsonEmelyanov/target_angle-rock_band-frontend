@@ -1,0 +1,7 @@
+.video-content {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px; }
+
+/*# sourceMappingURL=video.css.map */

@@ -1,0 +1,29 @@
+.main-content {
+  width: 1030px;
+  height: 571px;
+  background: url("20160101_015503.svg");
+  margin-left: 256px;
+  margin-top: 158px; }
+
+.content {
+  position: relative; }
+
+.shot-hole {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  background: url("pngwing 5.svg"); }
+  .shot-hole__1 {
+    left: 300px;
+    top: 450px; }
+  .shot-hole__2 {
+    left: 1120px;
+    top: 450px; }
+  .shot-hole__3 {
+    left: 300px;
+    top: 10px; }
+  .shot-hole__4 {
+    left: 1120px;
+    top: 10px; }
+
+/*# sourceMappingURL=main-page.css.map */

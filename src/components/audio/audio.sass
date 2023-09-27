@@ -1,0 +1,91 @@
+.audio-content
+  display: block
+  margin-top: 70px
+  margin-left: auto
+  margin-right: auto
+  width: 1600px
+  min-height: 1040px
+  background: url("6487710a69fd22ca0a9f4a05503ac229 2.svg") no-repeat top 13px right 237px
+
+
+.album-name
+  font-family: 'Lato', sans-serif
+  font-style: normal
+  font-weight: 500
+  font-size: 24px
+  line-height: 17px
+  color: #F7F7F7
+  display: block
+  margin-bottom: 33px
+
+.library
+  margin-left: 447px
+  font-family: 'Lato', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 20px
+  line-height: 24px
+  color: #F7F7F7
+
+.library-song
+  width: 391px
+  display: flex
+  justify-content: space-between
+  margin-bottom: 13px
+  cursor: pointer
+  &-info
+    display: flex
+    padding-bottom: 5px
+    pointer-events: none
+
+//.selected
+  border-bottom: 1px solid #FF7000
+
+.playing-bullet
+  width: 17px
+  height: 17px
+  border-radius: 8.5px
+  border: #FF7000 1px solid
+  margin-top: 4px
+  margin-right: 10px
+  background: url("Group 151.svg") center no-repeat
+  display: none
+
+.audio-control
+  margin-left: 402px
+  width: 913px
+  font-family: 'Lato', sans-serif
+  font-style: normal
+  font-weight: 500
+  font-size: 24px
+  line-height: 17px
+  color: #F7F7F7
+  & > *
+    user-select: none
+
+.player
+  display: block
+  margin-top: 119px
+
+
+.player-control
+  display: inline-block
+
+.sound-control
+  display: inline
+  margin-left: 490px
+
+@-moz-document url-prefix()
+  .sound-control
+    margin-left: 488px
+
+
+.song-duration
+  pointer-events: none
+
+.song-current-time
+  color: #FF7000
+  display: none
+
+.sound-control i
+  color: #FF7000

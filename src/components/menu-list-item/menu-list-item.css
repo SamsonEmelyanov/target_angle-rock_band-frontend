@@ -1,0 +1,83 @@
+.menu__item {
+  width: 350px;
+  min-height: 400px;
+  box-shadow: 5px 5px 45px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-right: 40px;
+  margin-bottom: 40px; }
+.menu__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 17px;
+  color: #F7F7F7; }
+.menu__img {
+  width: calc(100% + 40px);
+  transform: translateX(-20px);
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+  background: #F7F7F7; }
+.menu__category, .menu__price {
+  display: inline-block;
+  padding-top: 17.81px;
+  text-align: center;
+  width: 94px;
+  height: 51.45px;
+  margin-bottom: 10px;
+  margin-right: 28px;
+  background-color: #FF7000;
+  font-family: 'Lato',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 17px;
+  color: #FFFFFF; }
+  .menu__category span, .menu__price span {
+    font-weight: 700; }
+  .menu__category-wrapper, .menu__price-wrapper {
+    display: flex;
+    justify-content: space-between; }
+.menu__btn {
+  padding-top: 16.82px;
+  padding-left: 29.8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  width: 162px;
+  height: 51.45px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #F7F7F7;
+  border: 1px solid #FF7000;
+  box-sizing: border-box;
+  border-right: 9px solid #FF7000;
+  background: url("Vector (2).svg") no-repeat right 25.8px top 17.81px; }
+  .menu__btn:active {
+    background: url("../history/Group 150.svg") no-repeat right 20.8px top 22.81px;
+    animation: anim 0.3s; }
+
+@keyframes anim {
+  50% {
+    transform: scale(0.98);
+    border: #D73A08 1px solid;
+    border-right: 9px solid #D73A08;
+    background: url("../history/Group 150.svg") no-repeat right 15.8px top 22.81px; }
+  100% {
+    transform: scale(1);
+    border: #FF7000 1px solid;
+    border-right: 9px solid #D73A08;
+    background: url("../history/Group 150.svg") no-repeat right 20.8px top 22.81px; } }
+
+/*# sourceMappingURL=menu-list-item.css.map */

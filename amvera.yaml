@@ -1,0 +1,8 @@
+meta:
+  environment: node
+  toolchain:
+    name: npm
+    version: 14
+
+run:
+  scriptName: server.js

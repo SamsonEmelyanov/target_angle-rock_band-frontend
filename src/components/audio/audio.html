@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/4074b6dd70.js" crossorigin="anonymous"></script>
+    <title>Ракурс цели - Аудио</title>
+    <link rel="stylesheet" href="./components/style.css">
+    <link rel="icon" type="image/png" href="../main-page/Ракурс%20цели%20-%20title.png" />
+    <link rel="stylesheet" href="../main-page/main-page.css">
+    <link rel="stylesheet" href="../history/history.css">
+    <link rel="stylesheet" href="audio.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-content">АУДИО</div>
+    </header>
+    <div class="content">
+        <div class="library">
+            <h3 class="album-name">Демо - Альбом</h3>
+            <div class="library-song selected" id="0">
+                <div class="library-song-info">
+                    <div class="playing-bullet"></div>
+                    <span class="song-number">1  &nbsp;</span><span class="song-name">Гетто</span>
+                </div>
+                <div class="song-duration">3:36</div>
+                <div class="song-current-time"></div>
+            </div>
+            <div class="library-song" id="1">
+                <div class="library-song-info">
+                    <div class="playing-bullet"></div>
+                    <span class="song-number">2  &nbsp;</span><span class="song-name">Забвение</span>
+                </div>
+                <div class="song-duration">4:54</div>
+                <div class="song-current-time"></div>
+            </div>
+            <div class="library-song" id="2">
+                <div class="library-song-info">
+                    <div class="playing-bullet"></div>
+                    <span class="song-number">3  &nbsp;</span><span class="song-name">Судьба</span>
+                </div>
+                <div class="song-duration">3:53</div>
+                <div class="song-current-time"></div>
+            </div>
+            <div class="library-song" id="3">
+                <div class="library-song-info">
+                    <div class="playing-bullet"></div>
+                    <span class="song-number">4  &nbsp;</span><span class="song-name">Вперед</span>
+                </div>
+                <div class="song-duration">3:01</div>
+                <div class="song-current-time"></div>
+            </div>
+            <div class="library-song" id="4">
+                <div class="library-song-info">
+                    <div class="playing-bullet"></div>
+                    <span class="song-number">5  &nbsp;</span><span class="song-name">Игра</span>
+                </div>
+                <div class="song-duration">4:20</div>
+                <div class="song-current-time"></div>
+            </div>
+            <div class="library-song" id="5">
+                <div class="library-song-info">
+                    <div class="playing-bullet"></div>
+                    <span class="song-number">6  &nbsp;</span><span class="song-name">Ракурс цели</span>
+                </div>
+                <div class="song-duration">5:40</div>
+                <div class="song-current-time"></div>
+            </div>
+            <div class="library-song" id="6">
+                <div class="library-song-info">
+                    <div class="playing-bullet"></div>
+                    <span class="song-number">7  &nbsp;</span><span class="song-name">Живи, пока живой...</span>
+                </div>
+                <div class="song-duration">4:21</div>
+                <div class="song-current-time"></div>
+            </div>
+            <div class="library-song" id="7">
+                <div class="library-song-info">
+                    <div class="playing-bullet"></div>
+                    <span class="song-number">8 &nbsp;</span><span class="song-name">Метрополитен</span>
+                </div>
+                <div class="song-duration">4:39</div>
+                <div class="song-current-time"></div>
+            </div>
+            <div class="library-song" id="8">
+                <div class="library-song-info">
+                    <div class="playing-bullet"></div>
+                    <span class="song-number">9 &nbsp;</span><span class="song-name">Шторм</span>
+                </div>
+                <div class="song-duration">4:46</div>
+                <div class="song-current-time"></div>
+            </div>
+        </div>
+        <div class="audio-control">
+        <div class="player">
+            <div>
+                <input type="range" />
+                <div></div>
+            </div>
+        </div>
+        <div class="player-control">
+            <i class="fas fa-backward" id="backward"></i>
+            <i class="fas fa-play" id="play-pause"></i>
+            <i class="fas fa-forward" id="forward"></i>
+        </div>
+        <div class="sound-control">
+            <i class="fas fa-volume-down"></i>
+            <input type="range" max="100" step="1" />
+            <i class="fas fa-volume-up"></i>
+        </div>
+        <audio src="https://firebasestorage.googleapis.com/v0/b/target-angle-rock-band.appspot.com/o/target-angle-songs%2F%D0%93%D0%B5%D1%82%D1%82%D0%BE(KUSTOM%20Groove%201200).mp3?alt=media&token=c47deb62-09c3-47bd-867b-d4b703519b8c"></audio>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-menu">
+            <ul class="menu-left menu-left__footer">
+                <li><a href="../history/history.html">История</a></li>
+                <li><a href="../musicians/musicians.html">Музыканты</a></li>
+                <li><a href="../audio/audio.html">Аудио</a></li>
+                <li><a href="../video/video.html">Видео</a></li>
+            </ul>
+            <a class="logo__footer" href="../main-page/main-page.html"></a>
+            <ul class="menu-right menu-right__footer">
+                <li><a href="../concerts/concerts.html">Концерты</a></li>
+                <li><a href="../events/events.html">События</a></li>
+                <li><a href="">Магазин</a></li>
+                <li><a href="../fun-club/fun-club.html">Фан-клуб</a></li>
+            </ul>
+        </div>
+        <ul class="footer-text">
+            <li>Все права защищены ©2021</li>
+            <li class="footer-tel">+7 (964)969-12-84(Viber)</li>
+            <li>Связь с администрацией : samson.emelyanov@gmail.com</li>
+        </ul>
+    </div>
+</footer>
+<script src="audio.js"></script>
+</body>
+</html>
