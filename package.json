@@ -63,8 +63,5 @@
     "react-input-emoji": "latest",
     "redux-form": "^8.3.8",
     "sockjs-client": "^1.5.2"
-  },
-  "engines": {
-    "node": "14.17.5"
   }
 }
