@@ -9,4 +9,3 @@ build:
 run:
   scriptName: server.js
   containerPort: 3000
-  command: ""
