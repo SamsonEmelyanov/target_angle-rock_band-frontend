@@ -9,4 +9,4 @@ build:
 run:
   scriptName: server.js
   containerPort: 3000
-  command: npm rimraf node_modules
+  command: ""
