@@ -205,8 +205,6 @@ e
 5src/components/footer/РАКУРС-ЦЕЛИ-1 (1).svg,b\a\ba8012b1886170c34c5f2a8b6a08ea0deb482f3f
 N
 src/components/footer/index.js,b\6\b68d680e36ce5cae76d4b6a058630ccbd1f77f2c
-O
-src/components/footer/footer.js,0\a\0a5183bd20e8c53764af39d1a629ede75dd0034c
 T
 $src/components/footer/footer.css.map,1\f\1fbab55c16aad721c72eb7f0b84a9a015ffee3f8
 R
@@ -249,12 +247,8 @@ O
 src/components/video/video.html,4\d\4d99a5522034df7006cec34e820c4d20c83703cb
 U
 %src/components/fun-club/fun-club.html,f\f\ff7b6817773fd7a100d14cc89c3950d9222760b5
-X
-(src/components/fun-club/fun-club.css.map,7\8\78c577c946683c9dc96aadc402711b537da55c2f
 U
 %src/components/concerts/concerts.sass,9\0\90cf8fcc498ee23e7539cc6442cbea816fede19b
-T
-$src/components/fun-club/fun-club.css,2\0\202ea9990112f0985f75c55df9cf2f7f40e418d9
 X
 (src/components/concerts/concerts.css.map,d\a\da6aa169dbbe7ee116e65938083073df49eea4c9
 T
@@ -279,12 +273,8 @@ S
 #src/components/history/history.html,2\1\212e446400103249fb7fde2bdd2b2bf56da650c4
 V
 &src/components/history/history.css.map,d\5\d5ae80caee74859f57915a5c5af25b026724bbc8
-S
-#src/components/history/history.sass,9\e\9eab9b11409d00ff13160156323c89aad9768f7d
 X
 (src/components/history/full-history.sass,9\e\9e5b13a9d6d650619f21549dcffad94f3bff17c1
-V
-&src/components/history/full-history.js,5\6\569f68997759c41a58e1957b633d1edfc2b12385
 R
 "src/components/history/history.css,3\f\3f1f1985a4bfe7d06e77ebe7bf3d2891437f6a60
 T
@@ -297,8 +287,6 @@ U
 %src/components/musicians/musicians.js,d\6\d69a2763dcb1763b6ecee2612d0d95e8df1858ad
 W
 'src/components/musicians/musicians.html,a\c\ac8f584c5e5c4a07fdddaa730c0660e0a7fffbaf
-U
-%src/components/menu-list/menu-list.js,c\f\cfd721918634b49d1e913a9bafe1c67a33c018f9
 Z
 *src/components/menu-list/menu-list.css.map,d\c\dc168bec344601ad5448c1ee34a6d11058caba3b
 W
@@ -405,14 +393,8 @@ o
 ?src/components/RegistAuthentification/RegistAuthentification.js,f\1\f10c58c5b87d9dccb2e2c1301f0cf830d17c8ebb
 p
 @src/components/RegistAuthentification/RegistAuthentification.css,c\5\c5a609a1685e8d3ae553a3d01cf89724ba8152b4
-_
-/src/components/menu-list-item/menu-list-item.js,4\5\4598d719f65e745f527c2c9bc7497c88b1680d23
 d
 4src/components/menu-list-item/menu-list-item.css.map,4\1\4126b9a21f2b1080089a598fe8375f89209be3b0
-\
-,src/components/menu-list-item/Vector (2).svg,3\5\3556ce8d7cbf4f54608a9138f9a4b76245c304df
-a
-1src/components/menu-list-item/menu-list-item.scss,5\a\5a8052a331eb62560da749aac96816bf5853eab6
 U
 %src/components/error-boundry/index.js,a\a\aa012a22cdb521e2ff6273d59adb30e91844d75f
 `
@@ -446,9 +428,3 @@ X
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 <
 src/index.js,f\9\f900edc44cb929c2267a16100a32851f6d5b477d
-Q
-!src/components/history/history.js,0\1\012eb845074b4b7a82d45a6d42c28e9af42fce20
-T
-$src/components/user/signup/Signup.js,7\2\724577bd996c9a62fa73fbdf5040b7c0b11d42ed
-I
-src/components/history.js,0\3\03a53f1b7608e5f0109b48f5fd0a38e79a2ac735

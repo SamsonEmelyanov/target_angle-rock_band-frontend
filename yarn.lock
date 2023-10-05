@@ -2761,6 +2761,11 @@ clsx@^1.0.4, clsx@^1.1.1:
   resolved "https://registry.npmjs.org/clsx/-/clsx-1.1.1.tgz"
   integrity sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==
 
+clsx@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
+  integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
+
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.npmjs.org/co/-/co-4.6.0.tgz"
@@ -3723,6 +3728,18 @@ emoji-mart@5.5.2:
   version "5.5.2"
   resolved "https://registry.yarnpkg.com/emoji-mart/-/emoji-mart-5.5.2.tgz#3ddbaf053139cf4aa217650078bc1c50ca8381af"
   integrity sha512-Sqc/nso4cjxhOwWJsp9xkVm8OF5c+mJLZJFoFfzRuKO+yWiN7K8c96xmtughYb0d/fZ8UC6cLIQ/p4BR6Pv3/A==
+
+emoji-picker-react@^4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/emoji-picker-react/-/emoji-picker-react-4.5.2.tgz#74317db98099ea0e3d42719768efc7a227f152cd"
+  integrity sha512-08v+yyFizoR9rEtLjuodTdlYQbkk0QWeKm6er0RQjks+b6Bfpw1UX9XheLcXreEAve7VVE7Tcu/kSAIm54V4zA==
+  dependencies:
+    clsx "^1.2.1"
+
+emoji-picker@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/emoji-picker/-/emoji-picker-0.0.7.tgz#3180662dbc49c74161330871d56344f854f8e105"
+  integrity sha512-qs3lIgX+tpftwX5wDHR3/TrLnPOCr8IHpdSgPsBCvUBieJCO4M6Yv5cQkz1zFQCBAAZtRtL0L33+EFzYi5yc6g==
 
 emoji-regex@^7.0.1, emoji-regex@^7.0.2:
   version "7.0.3"

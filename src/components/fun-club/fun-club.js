@@ -1,12 +1,20 @@
 import React, {Component, useState, useEffect, useRef} from 'react';
 import InputEmoji from "react-input-emoji";
+import EmojiPicker, {
+    EmojiStyle,
+    SkinTones,
+    Theme,
+    Categories,
+    EmojiClickData,
+    Emoji,
+    SuggestionMode,
+    SkinTonePickerLocation
+} from "emoji-picker-react";
 import * as SockJS from 'sockjs-client';
 import * as Stomp from 'stompjs';
 import { DateTime } from 'luxon';
 import guestPhoto from './target-angle-stuff_cabinet.png';
 import './fun-club.sass';
-import fun_club_photo1 from './6487710a69fd22ca0a9f4a05503ac229 2.png';
-import fun_club_photo2 from './Vector.svg'
 import {API_BASE_URL} from "../constants";
 
 const FunClub = ({currentUser, authenticated, data, message, setData, setText}) => {
@@ -95,6 +103,16 @@ const FunClub = ({currentUser, authenticated, data, message, setData, setText}) 
             )
     }
 
+    const [selectedEmoji, setSelectedEmoji] = useState("1f60a");
+
+    function onClick(emojiData, event) {
+        setText(
+            (text) =>
+                text + (emojiData.isCustom ? emojiData.unified : emojiData.emoji)
+        );
+        setSelectedEmoji(emojiData.unified);
+    }
+
     return(
         <div className="fun-club-content">
             <div className="chat">
@@ -103,24 +121,138 @@ const FunClub = ({currentUser, authenticated, data, message, setData, setText}) 
                     <PostList/>
                 </div>
                 <form action="" onSubmit={onSubmit}>
-                    <div> {
-                        authenticated ? (
-                            <span></span>
-                        ) : (
-                            <span className="guest-warning">Внимание, Ваше сообщение будет отправлено от имени гостя</span>
-                        )
-                    }
+                    <div className="emoji">
+                    <div className="chat-form-content">
+                        {
+                            authenticated ? (
+                                <span></span>
+                            ) : (
+                                <span
+                                    className="guest-warning">Внимание, Ваше сообщение будет отправлено от имени гостя</span>
+                            )
+                        }
+                        <div>
+                            <input
+                                className="emoji-text-input"
+                                type="text"
+                                value={message}
+                                onChange={(e) => setText(e.target.value)}
+                                placeholder="Введите Ваше сообщение..."
+                            />
+                        </div>
+                        <div className="fun-club-button-container">
+                            <button type="submit" className="button fun-club-button">ОТПРАВИТЬ</button>
+                        </div>
                     </div>
-                    <InputEmoji
-                        borderRadius={2}
-                        value={message}
-                        onChange={setText}
-                        cleanOnEnter
-                        onEnter={sendMessage}
-                        placeholder="Введите Ваше сообщение"
-                    />
-                    <div className="fun-club-button-container">
-                        <button type="submit" className="button fun-club-button">ОТПРАВИТЬ</button>
+                    <div className="emoji-picker">
+                        <EmojiPicker
+                            onEmojiClick={onClick}
+                            autoFocusSearch={false}
+                            emojiStyle={EmojiStyle.GOOGLE}
+                            theme={Theme.AUTO}
+                            searchDisabled
+                            skinTonePickerLocation={SkinTonePickerLocation.PREVIEW}
+                            height={350}
+                            width="50%"
+                            emojiVersion="0.6"
+                            lazyLoadEmojis={true}
+                            previewConfig={{
+                                defaultCaption: "Pick one!",
+                                defaultEmoji: "1f92a" // 🤪
+                            }}
+                            suggestedEmojisMode={SuggestionMode.RECENT}
+                            skinTonesDisabled
+                            searchPlaceHolder="Filter"
+                            defaultSkinTone={SkinTones.MEDIUM}
+                            emojiStyle={EmojiStyle.GOOGLE}
+                            categories={[
+                                {
+                                    name: "Smiles & Emotions",
+                                    category: Categories.SMILEYS_PEOPLE
+                                },
+                                {
+                                    name: "Fun and Games",
+                                    category: Categories.ACTIVITIES
+                                },
+                                {
+                                    name: "Flags",
+                                    category: Categories.FLAGS
+                                },
+                                {
+                                    name: "Yum Yum",
+                                    category: Categories.FOOD_DRINK
+                                }
+                            ]}
+                            customEmojis={[
+                                {
+                                    names: ["Alice", "alice in wonderland"],
+                                    imgUrl:
+                                        "https://cdn.jsdelivr.net/gh/ealush/emoji-picker-react@custom_emojis_assets/alice.png",
+                                    id: "alice"
+                                },
+                                {
+                                    names: ["Dog"],
+                                    imgUrl:
+                                        "https://cdn.jsdelivr.net/gh/ealush/emoji-picker-react@custom_emojis_assets/dog.png",
+                                    id: "dog"
+                                },
+                                {
+                                    names: ["Hat"],
+                                    imgUrl:
+                                        "https://cdn.jsdelivr.net/gh/ealush/emoji-picker-react@custom_emojis_assets/hat.png",
+                                    id: "hat"
+                                },
+                                {
+                                    names: ["Kid"],
+                                    imgUrl:
+                                        "https://cdn.jsdelivr.net/gh/ealush/emoji-picker-react@custom_emojis_assets/kid.png",
+                                    id: "kid"
+                                },
+                                {
+                                    names: ["Mic"],
+                                    imgUrl:
+                                        "https://cdn.jsdelivr.net/gh/ealush/emoji-picker-react@custom_emojis_assets/mic.png",
+                                    id: "mic"
+                                },
+                                {
+                                    names: ["Moab", "desert"],
+                                    imgUrl:
+                                        "https://cdn.jsdelivr.net/gh/ealush/emoji-picker-react@custom_emojis_assets/moab.png",
+                                    id: "moab"
+                                },
+                                {
+                                    names: ["Potter", "harry", "harry potter"],
+                                    imgUrl:
+                                        "https://cdn.jsdelivr.net/gh/ealush/emoji-picker-react@custom_emojis_assets/potter.png",
+                                    id: "potter"
+                                },
+                                {
+                                    names: ["Shroom", "mushroom"],
+                                    imgUrl:
+                                        "https://cdn.jsdelivr.net/gh/ealush/emoji-picker-react@custom_emojis_assets/shroom.png",
+                                    id: "shroom"
+                                },
+                                {
+                                    names: ["Smily"],
+                                    imgUrl:
+                                        "https://cdn.jsdelivr.net/gh/ealush/emoji-picker-react@custom_emojis_assets/smily.png",
+                                    id: "smily"
+                                },
+                                {
+                                    names: ["Tabby", "cat"],
+                                    imgUrl:
+                                        "https://cdn.jsdelivr.net/gh/ealush/emoji-picker-react@custom_emojis_assets/tabby.png",
+                                    id: "tabby"
+                                },
+                                {
+                                    names: ["Vest"],
+                                    imgUrl:
+                                        "https://cdn.jsdelivr.net/gh/ealush/emoji-picker-react@custom_emojis_assets/vest.png",
+                                    id: "vest"
+                                }
+                            ]}
+                        />
+                    </div>
                     </div>
                 </form>
             </div>
