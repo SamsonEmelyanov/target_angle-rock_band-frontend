@@ -103,7 +103,7 @@
 .chat-window {
   margin-left: 70px;
   height: 651px;
-  width: 851px;
+  width: 951px;
   display: block;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
@@ -252,13 +252,14 @@
 .chat-list-item {
   display: flex;
   justify-content: space-between;
-  width: 851px;
+  width: 951px;
   margin-bottom: 15px;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 17px; }
+  font-size: 15px;
+  line-height: 17px;
+  color: #F7F7F7; }
 
 .chat-avatar img {
   border-radius: 50%;

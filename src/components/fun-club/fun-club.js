@@ -78,7 +78,7 @@ const FunClub = ({currentUser, authenticated, data, message, setData, setText}) 
                             {
                                 senderImg ? (
                                     <>
-                                        <img width={96} height={96}
+                                        <img width={48} height={48}
                                              src={senderImg}
                                              alt={sender}/>
                                         <div className="sender-name">{sender}</div>
