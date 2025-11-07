@@ -64,6 +64,13 @@ const initialState = {
             id: 8,
             duration: "4:46",
         },
+        {
+            name: "Путник(Bonus track)",
+            artist: "Ракурс цели",
+            audio: "https://firebasestorage.googleapis.com/v0/b/target-angle-rock-band.appspot.com/o/target-angle-songs%2F%D0%9F%D1%83%D1%82%D0%BD%D0%B8%D0%BA_2025.mp3?alt=media&token=a2677099-842f-4dd0-8475-eb29d9e7fc55",
+            id: 9,
+            duration: "3:25",
+        },
     ],
     menu: [],
     loading: true,
