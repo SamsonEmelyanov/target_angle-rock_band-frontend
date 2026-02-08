@@ -1,4 +1,4 @@
 {
-  "apiBaseUrl": "https://targetangle-rockband.ru",
-  "oauth2RedirectUri": "https://targetangle.ru/registration/oauth2/redirect"
+  "apiBaseUrl": "http://localhost:8080",
+  "oauth2RedirectUri": "http://localhost:3000/registration/oauth2/redirect"
 }
