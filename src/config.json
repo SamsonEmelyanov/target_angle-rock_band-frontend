@@ -1,4 +1,4 @@
 {
-  "apiBaseUrl": "http://localhost:8080",
-  "oauth2RedirectUri": "http://localhost:3000/registration/oauth2/redirect"
+  "REACT_APP_API_BASE_URL": "http://localhost:8080",
+  "REACT_APP_OAUTH2_REDIRECT_URI": "http://localhost:3000/registration/oauth2/redirect"
 }
