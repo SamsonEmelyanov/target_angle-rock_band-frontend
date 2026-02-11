@@ -134,10 +134,10 @@ export const processResponse = (response, query, type, uri, dispatch) => {
 const songsLoaded = () => async (dispatch, getState) => {
     const state = getState();
     // если в сторе уже есть песни — не дергаем сервис
-    if (state.mainReducer.songs && state.mainReducer.songs.length){
+    if (state.songsReducer.songs && state.songsReducer.songs.length){
         dispatch({
             type: 'SONGS_LOADED',
-            payload: state.mainReducer.songs
+            payload: state.songsReducer.songs
         })
         return;
     }

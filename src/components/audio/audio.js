@@ -13,9 +13,9 @@ import Spinner from "../spinner";
 
 const Audio = () => {
 
-    const songs = useSelector(state=>state.mainReducer.songs);
-    const loading = useSelector(state=>state.mainReducer.loading);
-    const error = useSelector(state=>state.mainReducer.error);
+    const songs = useSelector(state=>state.songsReducer.songs);
+    const loading = useSelector(state=>state.songsReducer.loading);
+    const error = useSelector(state=>state.songsReducer.error);
     const dispatch = useDispatch();
 
     useEffect(() => {

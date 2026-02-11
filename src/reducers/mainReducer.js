@@ -1,15 +1,44 @@
-// параметр по умолчанию
-const initialState = {
+
+export const songsReducer = (state = {
     songs : [],
+    loading: true,
+    error: false}, action) => {
+
+    switch (action.type) {
+        case 'SONGS_LOADED':
+            return {
+                ...state,
+                songs: action.payload,
+                loading: false,
+                error: false
+            };
+        case 'SONGS_REQUESTED':
+            return {
+                ...state,
+                songs: state.songs,
+                loading: true,
+                error: false
+            };
+        case 'SONGS_ERROR':
+            return {
+                ...state,
+                songs: state.songs,
+                error: true
+            };
+        default:
+            return state;
+    }
+
+}
+
+
+export const mainReducer = (state = {
     menu: [],
     loading: true,
     error: false,
     items: [],
     totalPrice: 0
-}
-
-
-const mainReducer = (state = initialState, action) => {
+}, action) => {
     switch (action.type) {
         case 'MENU_LOADED':
             return {
@@ -29,26 +58,6 @@ const mainReducer = (state = initialState, action) => {
             return {
                 ...state,
                 menu: state.menu,
-                error: true
-            };
-        case 'SONGS_LOADED':
-            return {
-                ...state,
-                songs: action.payload,
-                loading: false,
-                error: false
-            };
-        case 'SONGS_REQUESTED':
-            return {
-                ...state,
-                songs: state.songs,
-                loading: true,
-                error: false
-            };
-        case 'SONGS_ERROR':
-            return {
-                ...state,
-                songs: state.songs,
                 error: true
             };
         case 'ITEM_ADD_TO_CART':
@@ -119,5 +128,3 @@ const mainReducer = (state = initialState, action) => {
                 totalPrice: +localStorage.getItem('totalPrice')};
     }
 }
-
-export default mainReducer;

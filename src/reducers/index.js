@@ -1,7 +1,7 @@
 import {combineReducers} from "redux";
 import {reducer as formReducer} from "redux-form";
 
-import mainReducer from "./mainReducer";
+import {mainReducer, songsReducer} from "./mainReducer";
 
 import {
     homePageDataReducer, addToCartReducer,
@@ -24,6 +24,7 @@ import {
 
 export default combineReducers({
     mainReducer,
+    songsReducer,
     form: formReducer,
     signInReducer,
     signUpReducer,
