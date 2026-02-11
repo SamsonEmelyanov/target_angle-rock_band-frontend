@@ -1,77 +1,6 @@
 // параметр по умолчанию
 const initialState = {
-    songs : [
-        {
-            name: "ГЕТТО",
-            artist: "Ракурс цели",
-            audio: "https://storage.yandexcloud.net/target-angle-songs/%D0%A0%D0%B0%D0%BA%D1%83%D1%80%D1%81%20%D1%86%D0%B5%D0%BB%D0%B8%20-%20%D0%93%D0%B5%D1%82%D1%82%D0%BE(2026_remastered).mp3",
-            id: 0,
-            duration: "3:36",
-        },
-        {
-            name: "Забвение",
-            artist: "Ракурс цели",
-            audio: "https://storage.yandexcloud.net/target-angle-songs/%D0%A0%D0%B0%D0%BA%D1%83%D1%80%D1%81%20%D1%86%D0%B5%D0%BB%D0%B8%20-%20%D0%97%D0%B0%D0%B1%D0%B2%D0%B5%D0%BD%D0%B8%D0%B5(2026_remastered).mp3",
-            id: 1,
-            duration: "4:54",
-        },
-        {
-            name: "Судьба",
-            artist: "Ракурс цели",
-            audio: "https://storage.yandexcloud.net/target-angle-songs/%D0%A0%D0%B0%D0%BA%D1%83%D1%80%D1%81%20%D1%86%D0%B5%D0%BB%D0%B8%20-%20%D0%A1%D1%83%D0%B4%D1%8C%D0%B1%D0%B0(2026_remastered).mp3",
-            id: 2,
-            duration: "3:53",
-        },
-        {
-            name: "Ведьма-ночь",
-            artist: "Ракурс цели",
-            audio: "https://storage.yandexcloud.net/target-angle-songs/%D0%A0%D0%B0%D0%BA%D1%83%D1%80%D1%81%20%D1%86%D0%B5%D0%BB%D0%B8%20-%20%D0%92%D0%B5%D0%B4%D1%8C%D0%BC%D0%B0-%D0%BD%D0%BE%D1%87%D1%8C(2026_remastered).mp3",
-            id: 3,
-            duration: "3:25",
-        },
-        {
-            name: "Вперед",
-            artist: "Ракурс цели",
-            audio: "https://storage.yandexcloud.net/target-angle-songs/%D0%A0%D0%B0%D0%BA%D1%83%D1%80%D1%81%20%D1%86%D0%B5%D0%BB%D0%B8%20-%20%D0%92%D0%BF%D0%B5%D1%80%D0%B5%D0%B4(2026_remastered).mp3",
-            id: 4,
-            duration: "3:01",
-        },
-        {
-            name: "Игра",
-            artist: "Ракурс цели",
-            audio: "https://storage.yandexcloud.net/target-angle-songs/%D0%A0%D0%B0%D0%BA%D1%83%D1%80%D1%81%20%D1%86%D0%B5%D0%BB%D0%B8%20-%20%D0%98%D0%B3%D1%80%D0%B0(2026_remastered).mp3",
-            id: 5,
-            duration: "4:20",
-        },
-        {
-            name: "Ракурс цели",
-            artist: "Ракурс цели",
-            audio: "https://storage.yandexcloud.net/target-angle-songs/%D0%A0%D0%B0%D0%BA%D1%83%D1%80%D1%81%20%D1%86%D0%B5%D0%BB%D0%B8%20-%20%D0%A0%D0%B0%D0%BA%D1%83%D1%80%D1%81%20%D1%86%D0%B5%D0%BB%D0%B8(2026_remastered).mp3",
-            id: 6,
-            duration: "5:40",
-        },
-        {
-            name: "Живи, пока живой...",
-            artist: "Ракурс цели",
-            audio: "https://storage.yandexcloud.net/target-angle-songs/%D0%A0%D0%B0%D0%BA%D1%83%D1%80%D1%81%20%D1%86%D0%B5%D0%BB%D0%B8%20-%20%D0%96%D0%B8%D0%B2%D0%B8%2C%20%D0%BF%D0%BE%D0%BA%D0%B0%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%B9...(2026_remastered).mp3",
-            id: 7,
-            duration: "4:21",
-        },
-        {
-            name: "Метрополитен",
-            artist: "Ракурс цели",
-            audio: "https://storage.yandexcloud.net/target-angle-songs/%D0%A0%D0%B0%D0%BA%D1%83%D1%80%D1%81%20%D1%86%D0%B5%D0%BB%D0%B8%20-%20%D0%9C%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D0%BD(2026_remastered_%D0%BC%D0%B8%D0%BD%D1%83%D1%81).mp3",
-            id: 8,
-            duration: "4:39",
-        },
-        {
-            name: "Шторм",
-            artist: "Ракурс цели",
-            audio: "https://storage.yandexcloud.net/target-angle-songs/%D0%A0%D0%B0%D0%BA%D1%83%D1%80%D1%81%20%D1%86%D0%B5%D0%BB%D0%B8%20-%20%D0%A8%D1%82%D0%BE%D1%80%D0%BC(2026_remastered).mp3",
-            id: 9,
-            duration: "4:46",
-        },
-    ],
+    songs : [],
     menu: [],
     loading: true,
     error: false,
@@ -100,6 +29,26 @@ const mainReducer = (state = initialState, action) => {
             return {
                 ...state,
                 menu: state.menu,
+                error: true
+            };
+        case 'SONGS_LOADED':
+            return {
+                ...state,
+                songs: action.payload,
+                loading: false,
+                error: false
+            };
+        case 'SONGS_REQUESTED':
+            return {
+                ...state,
+                songs: state.songs,
+                loading: true,
+                error: false
+            };
+        case 'SONGS_ERROR':
+            return {
+                ...state,
+                songs: state.songs,
                 error: true
             };
         case 'ITEM_ADD_TO_CART':

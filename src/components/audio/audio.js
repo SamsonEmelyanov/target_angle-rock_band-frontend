@@ -1,17 +1,37 @@
 import React, {useEffect} from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import './components/_player-control.scss'
 import './components/_player.scss'
 import './components/_sound-control.scss'
 import './components/style.scss'
 import './audio.sass'
 import fun_club_photo1 from "../fun-club/6487710a69fd22ca0a9f4a05503ac229 2.png";
+import {songsRequested, songsLoaded} from "../../actions";
+import Error from "../error";
+import Spinner from "../spinner";
 
 
 const Audio = () => {
 
     const songs = useSelector(state=>state.mainReducer.songs);
-    useEffect(()=> {
+    const loading = useSelector(state=>state.mainReducer.loading);
+    const error = useSelector(state=>state.mainReducer.error);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(songsRequested());
+        dispatch(songsLoaded());
+    },[])
+
+    useEffect(() => {
+
+            if (error){
+                return <Error/>
+            }
+            if (loading) {
+                return <Spinner/>
+            }
+
             document.querySelector('.library-song').classList.add('selected')
             const audio = document.querySelector("audio");
             let librarySongs = Array.from(document.querySelectorAll(".library-song"));

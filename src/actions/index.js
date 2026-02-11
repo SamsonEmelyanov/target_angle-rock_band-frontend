@@ -12,6 +12,7 @@ import log from "loglevel";
 import {commonServiceAPI} from "../api/service_api";
 import axios from 'axios';
 import {API_BASE_URL} from "../components/constants";
+import RestoService from "../services/resto-service";
 
 
 export const setShippingAddress = payload => {
@@ -130,6 +131,37 @@ export const processResponse = (response, query, type, uri, dispatch) => {
     }
 }
 
+const songsLoaded = () => async (dispatch, getState) => {
+    const state = getState();
+    // если в сторе уже есть песни — не дергаем сервис
+    if (state.mainReducer.songs && state.mainReducer.songs.length){
+        dispatch({
+            type: 'SONGS_LOADED',
+            payload: state.mainReducer.songs
+        })
+        return;
+    }
+    new RestoService().getSongItems()
+        .then(songs => {
+            dispatch({
+                type: 'SONGS_LOADED',
+                payload: songs
+            })
+        }).catch(() => dispatch(songsError()))
+}
+
+const songsRequested = () => {
+    return {
+        type: 'SONGS_REQUESTED',
+    }
+}
+
+const songsError = () => {
+    return {
+        type: 'SONGS_ERROR',
+    }
+}
+
 const menuLoaded = (newMenu) => {
     return {
         type: 'MENU_LOADED',
@@ -168,5 +200,8 @@ export {
     menuRequested,
     menuError,
     addedToCart,
-    deleteFromCart
+    deleteFromCart,
+    songsLoaded,
+    songsRequested,
+    songsError
 };

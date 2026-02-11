@@ -6,6 +6,10 @@ export default class RestoService{
         return await this.getResource('/menu/');
     }
 
+    async getSongItems(){
+        return await this.getResource('/songs/');
+    }
+
     async getResource(url) {
         const res = await fetch(`${this._apiBase}${url}`);
         if (!res.ok) {
