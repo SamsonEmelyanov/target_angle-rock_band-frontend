@@ -12,6 +12,7 @@ import {
 import {DocumentTitle} from "../ui/documentTitle";
 import {GenericErrorMsg} from "../ui/error/GenericErrorMsg";
 import {sendEmail} from "./util/APIUtils";
+import {SELLER_EMAIL} from "./constants";
 
 const resetStates = [RESET_ADD_TO_CART, RESET_CART_TOTAL, RESET_DELIVERY_CHARGES,
     RESET_PAYMENT_RESPONSE, RESET_SHIPPING_ADDRESS, RESET_SHIPPING_OPTION, RESET_SHOPPING_BAG_PRODUCTS]
@@ -81,7 +82,7 @@ export const SuccessPayment = () => {
             });
 
         const emailToSupplier = {
-            email: 'samson.emelyanov@gmail.com',
+            email: SELLER_EMAIL,
             subject: `Заказ №${paymentResponse.order_id} от ${shippingAddressForm.firstName} ${shippingAddressForm.lastName} успешно сформирован`,
             body: `Сформирован заказ на покупку товаров,<br><br>
                         Сведения о покупателе:<br>
