@@ -19,7 +19,6 @@ const Audio = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(songsRequested());
         dispatch(songsLoaded());
     },[])
 
