@@ -5,6 +5,7 @@ import {connect} from "react-redux";
 import {sendPaymentToken} from "../actions"
 import log from 'loglevel';
 import AlertModal from "../ui/alertModal";
+import {STRIPE_CURRENCY, STRIPE_KEY, STRIPE_NAME} from "../components/constants";
 
 class PaymentButton extends Component {
 
@@ -63,10 +64,10 @@ class PaymentButton extends Component {
                     this.renderButton():
                     <StripeCheckout
                         token={this.onToken}
-                        stripeKey={'pk_test_51K5H8GIn60CVzGvB75HwGhgjjZ31rdoSKEKEsg6kyjOcj4vDE52ZTtqU32k0e1NuySWHUKlMQEWvP1gf4xPXZqVv00hEQug4fw'}
-                        name="Target-Angle Rock-Band"
+                        stripeKey={STRIPE_KEY}
+                        name={STRIPE_NAME}
                         amount={this.getGrandTotal()} // cents
-                        currency="RUB">
+                        currency={STRIPE_CURRENCY}>
                         {this.renderButton()}
                     </StripeCheckout>}
             </>

@@ -10,3 +10,6 @@ export const FACEBOOK_AUTH_URL = API_BASE_URL + '/oauth2/authorize/facebook?redi
 export const GITHUB_AUTH_URL = API_BASE_URL + '/oauth2/authorize/github?redirect_uri=' + OAUTH2_REDIRECT_URI;
 
 export const SELLER_EMAIL =  process.env.REACT_APP_MERCH_SELLER_EMAIL || Config.REACT_APP_MERCH_SELLER_EMAIL
+export const STRIPE_KEY = process.env.REACT_APP_STRIPE_KEY || Config.REACT_APP_STRIPE_KEY
+export const STRIPE_NAME = process.env.REACT_APP_STRIPE_NAME || Config.REACT_APP_STRIPE_NAME
+export const STRIPE_CURRENCY = process.env.REACT_APP_STRIPE_CURRENCY || Config.REACT_APP_STRIPE_CURRENCY

@@ -25,10 +25,10 @@ const Audio = () => {
     useEffect(() => {
 
             if (error){
-                return <Error/>
+                return;
             }
             if (loading) {
-                return <Spinner/>
+                return;
             }
 
             document.querySelector('.library-song').classList.add('selected')
@@ -661,10 +661,16 @@ const Audio = () => {
                         <div className="offer__slider-next"></div>
                     </div>
                 </div>
+                {error ? <Error message={"Ошибка загрузки аудиоконтента"} onRetry={() => {
+                    dispatch(songsRequested())
+                    dispatch(songsLoaded())
+                }
+                }/> : null}
+                {loading ? <Spinner/> :
                 <div className="library">
                     <h3 className="album-name">Демо - Альбом</h3>
                     {songsItems}
-                </div>
+                </div>}
                 <div className="audio-control">
                     <div className="player">
                         <div>

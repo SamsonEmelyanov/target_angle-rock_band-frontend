@@ -26,7 +26,7 @@ const MenuList = ({RestoService}) => {
             .catch(() => dispatch(menuError()));
     },[])
         if (error){
-            return <Error/>
+            return <Error message={"Ошибка загрузки мерча"}/>
         }
         if (loading) {
             return <Spinner/>

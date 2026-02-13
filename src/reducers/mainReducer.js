@@ -23,7 +23,8 @@ export const songsReducer = (state = {
             return {
                 ...state,
                 songs: state.songs,
-                error: true
+                error: true,
+                loading: false
             };
         default:
             return state;
