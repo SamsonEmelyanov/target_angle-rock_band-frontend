@@ -23,7 +23,7 @@ class PaymentButton extends Component {
         this.props.sendPaymentToken({
             ...token,
             amount: this._GrandTotal,
-            currency: "RUB",
+            currency: STRIPE_CURRENCY,
             address: this.props.shippingAddressForm.values,
             addToCart: this.props.addToCart,
             shippingOption: this.props.shippingOption
