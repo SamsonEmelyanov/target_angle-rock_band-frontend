@@ -55,7 +55,7 @@ const App = () => {
     const loadCurrentlyPostedMessages = () =>  {
         getAllChatMessages().then(response => {
             setData(response.map((elem)=>{
-                return {...elem, date: DateTime.fromISO(elem.date).toString()};
+                return {...elem, date: DateTime.fromMillis(elem.date).toString()};
             }));
         }).catch(error => {
             console.log('Error in loading posted messages')
